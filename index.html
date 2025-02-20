@@ -1,70 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>PX | Professor Xplore </title>
+    <title>PX | Professor Xplorer</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-
-  </head>
-  <body>
-    <!-- particles.js container -->
-      <div id="particles-js">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Kiwi Maru', serif;
+            background-color: #13e9e5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            max-width: 600px;
+            color: white;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+        .header img {
+            width: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .header span {
+            font-size: 24px;
+            font-weight: bold;
+            display: block;
+        }
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .social-links a {
+            background: white;
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+        .social-links img {
+            width: 20px;
+            margin-right: 8px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+            }
+            .header span {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
         <div class="header">
-          <img class="user-img" src="img/profile.webp">
-           <span>Welcome to Professor Xplorer</span>
-
+            <img src="img/profile.webp" alt="Profile Picture">
+            <span>Welcome to Professor Xplorer</span>
         </div>
-        <div class="white-box">
-          <div class="white-box-out">
-            <div class="user-inn">
-              
-              <span>Connect With Me</span>
-            </div>
-            <div class="social-r">
-              <ul>
-                <li>
-                  <a href="https://www.facebook.com/ProfessorXplorer"><span class="so-icon"><img src="img/facebook.png"></span><span class="sotxt">facebook</span></a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/professor_xplorer/"><span class="so-icon insta"><img src="img/instagram.png"></span><span class="sotxt">instagram</span></a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/profesorxplorer"><span class="so-icon twiit"><img src="img/twitter.png"></span><span class="sotxt">twitter</span></a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/akakkey/"><span class="so-icon Linkdin"><img src="img/ldn.png"></span><span class="sotxt">Linkdin</span></a>
-                </li>
-                <li>
-                  <a href="https://github.com/professorxplorer"><span class="so-icon GetHub"><img src="img/git.png"></span><span class="sotxt">GitHub</span></a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com/channel/UCtql8KBOt9gEuTxfnA6asvQ"><span class="so-icon Youtube"><img src="img/yt.webp"></span><span class="sotxt">Youtube PX</span></a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com/channel/UCM6qZgBEvuaGgsW8E6cCvSQ"><span class="so-icon Youtube"><img src="img/yt.webp"></span><span class="sotxt">Youtube PXT</span></a>
-                </li>
-                <li>
-                  <a href="https://linktr.ee/Professorxplorer"><span class="so-icon tree"><img src="img/linktree.jpg"></span><span class="sotxt">My Linktree </span></a>
-                </li>
-                
-              </ul>
-            </div>
-          </div>
+        <div class="social-links">
+            <a href="https://www.facebook.com/ProfessorXplorer"><img src="img/facebook.webp"> Facebook</a>
+            <a href="https://www.instagram.com/professor_xplorer/"><img src="img/instagram.png"> Instagram</a>
+            <a href="https://twitter.com/profesorxplorer"><img src="img/x.png"> Twitter</a>
+            <a href="https://www.linkedin.com/in/akakkey/"><img src="img/ldn.png"> LinkedIn</a>
+            <a href="https://github.com/professorxplorer"><img src="img/git.png"> GitHub</a>
+            <a href="https://www.youtube.com/channel/UCtql8KBOt9gEuTxfnA6asvQ"><img src="img/yt.webp"> YouTube PX</a>
+            <a href="https://www.youtube.com/channel/UCM6qZgBEvuaGgsW8E6cCvSQ"><img src="img/yt.webp"> YouTube PXT</a>
+            <a href="https://linktr.ee/Professorxplorer"><img src="img/linktree.jpg"> Linktree</a>
         </div>
-      </div>
-
-    
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    </div>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  </body>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 200 },
+                "color": { "value": "#ffffff" },
+                "opacity": { "value": 0.5 },
+                "size": { "value": 3 },
+                "move": { "enable": true, "speed": 2 }
+            }
+        });
+    </script>
+</body>
 </html>
+
 
 <style type="text/css">
   
@@ -294,6 +340,7 @@ img.user-img {
 </style>
 
 <script type="text/javascript">
+  
   /* ---- particles.js config ---- */
 
 particlesJS("particles-js", {
@@ -408,23 +455,3 @@ particlesJS("particles-js", {
 });
 
 
-/* ---- stats.js config ---- */
-
-var count_particles, stats, update;
-stats = new Stats;
-stats.setMode(0);
-stats.domElement.style.position = 'absolute';
-stats.domElement.style.left = '0px';
-stats.domElement.style.top = '0px';
-document.body.appendChild(stats.domElement);
-count_particles = document.querySelector('.js-count-particles');
-update = function() {
-  stats.begin();
-  stats.end();
-  if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-    count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-  }
-  requestAnimationFrame(update);
-};
-requestAnimationFrame(update);
-</script>
